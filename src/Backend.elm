@@ -13,7 +13,7 @@ app =
     Lamdera.backend
         { init = init
         , update = update
-        , updateFromFrontend = \_ cid msg mod -> updateFromFrontend cid msg mod
+        , updateFromFrontend = \_ -> updateFromFrontend
         , subscriptions = \_ -> Sub.none
         }
 
